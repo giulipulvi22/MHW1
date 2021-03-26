@@ -1,0 +1,371 @@
+body{
+    top:0;
+    margin: 0;
+}
+/*header*/
+header{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    height: 80vh;
+    width: 100%;
+    background-image: url("immagini/PiazzaSanMarco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 7vh;
+}
+
+header::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+nav{
+    background-color: rgba(191, 133, 99, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.5em;
+    z-index: 2;
+}
+
+#menu{
+    display: none;
+}
+
+#link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+#menu div {
+    width: 7vw;
+    height: 0.5vh;
+    background-color: white;
+    margin: 0.7vh 0;
+}
+
+#link a{
+    margin-left: 2vw;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+}
+
+#link a:hover{
+    font-weight: bold;
+}
+
+#nome{
+    margin-left: 3vw;
+    z-index: 1;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 2px 4px;
+    background-color: rgba(256, 256, 256, 0.3);
+}
+
+#centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 60%;
+    margin-top: 20vh;
+}
+
+#centro .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#centro img{
+    height: 30vh;
+    z-index: 1;
+}
+
+#centro p{
+    z-index: 1;
+    font-size: 2.5em;
+}
+
+#centro a{
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: rgba(191, 133, 99, 0.3);
+    padding: 3% 3%;
+    font-size: 0.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -5%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#centro a:hover{
+    background-color: rgba(89, 38, 20, 0.5);
+
+}
+
+/*section*/
+section{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    color: rgba(38, 16, 8, 1);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.block1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+}
+
+.block2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.block2 .item{
+    width: 40%;
+}
+
+section img{
+    width: 100%;
+    margin: 10vh 1vw;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: normal;
+    margin-top: -10vh;
+}
+
+.foto h1{
+    font-size: 0.7em;
+}
+
+.autore{
+    font-size: 0.6em;
+    opacity: 0.8;
+    font-style: italic;
+    line-height: 10vh;
+}
+
+.descrizione{
+    font-size: 0.4em;
+    opacity: 0.6;
+}
+
+.foto a{
+    width: 55%;
+    text-transform: uppercase;
+    font-size: 0.4em;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid rgba(140, 71, 31, 0.6);
+    border-radius: 100px;
+    margin-top: 5vh;
+    color: white;
+    background-color: rgba(140, 71, 31, 0.6);
+    padding: 4px;
+}
+
+.foto a:hover{
+    color:  rgba(140, 71, 31, 0.6);
+    background-color: inherit;
+}
+
+/*footer*/
+footer{
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgba(191, 133, 99, 0.7);
+    margin-bottom: 0px;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.5em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#utils{
+    font-size: 1rem;
+    margin-left: 5vw;
+}
+
+footer .logo{
+    margin-right: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    height: 5vh;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+/*Regolazioni per iPad Pro e schermi di dimensioni minori*/
+@media (max-width:1200px){
+    #link{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+        margin-right: 5vw;
+    }
+}
+
+@media (max-width:1200px) {
+    .descrizione {
+        font-size: 26px;
+    }
+
+    .autore{
+        font-size: 30px;
+    }
+
+    .item .foto a{
+        width: 40vw;
+        padding: 3px;
+    }
+}
+
+@media (max-width:1200px){
+    nav{
+        height: 10vh;
+    }
+    #centro .logo{
+        flex-direction: column;
+    }
+    #centro .logo img{
+        height: 15vh;
+    }
+
+    #centro .logo p{
+        font-size: 40px;
+    }
+
+    #centro a{
+        font-size: 15px;
+        width: 30vw;
+    }
+}
+
+@media (max-width:1200px){
+
+    .block2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block2 .item, .block2 .item img{
+        width: 90vw;
+    }
+}
+
+/*regolazioni per schermi < 600px*/
+@media (max-width:600px) {
+    .descrizione {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:600px){
+    footer{
+        height: 10vh;
+    }
+
+    footer .logo img{
+        height: 30%;
+    }
+
+    footer .logo p{
+        font-size: 20px;
+    }
+
+    footer #utils{
+        font-size: 15px;
+    }
+}
+
+
+/*regolazioni per iPhone 5 e schermi minori*/
+@media (max-width:450px) {
+    .foto h1 {
+        font-size: 25px;
+    }
+
+    .autore{
+        font-size: 20px;
+    }
+
+    #intestazione{
+        font-size: 30px;
+    }
+
+    #centro a{
+        width: 50vw;
+    }
+}
